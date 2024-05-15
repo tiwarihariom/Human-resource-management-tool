@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body{
+  margin: 0px;
+}
+
+header {
+  background: rgb(69, 90, 100); /* Updated background color */
+  color: white;
+  padding: 20px 30px; /* Adjusted padding */
+  height: 80px; /* Increased height */
+}
+
+header h1 {
+  display: inline;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  font-size: 36px; /* Increased font size */
+  float: left;
+  margin-top: 0;
+  margin-right: 20px; /* Adjusted margin */
+}
+
+
+nav ul {
+  display: flex; /* Change display to flex for easier alignment */
+  padding: 0; /* Remove padding */
+  justify-content: flex-end; /* Align items to the right */
+}
+
+nav ul li {
+  margin-left: 20px; /* Increase margin for better spacing */
+}
+
+nav ul li a {
+  color: #ffffff; /* Explicitly set text color */
+  text-decoration: none;
+  padding: 10px; /* Add padding for better clickable area */
+  transition: color 0.3s; /* Add smooth color transition on hover */
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Change text color on hover */
+}
+
+nav ul ul {
+  position: absolute;
+  display: none;
+}
+
+nav ul li:hover ul {
+  display: block; /* Show submenu on hover */
+}
+
+
+
+
+
+
+#navli {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.homered {
+  background-color: #ff5733; /* Change red to a brighter shade of red */
+  padding: 25px 15px; /* Adjust padding for better appearance */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.divider {
+  background-color: #ff5733; /* Change red to match homered background */
+  height: 3px; /* Reduce divider height for a subtle effect */
+}
+
+.homeblack:hover {
+  background-color: #3399ff; /* Change blue to a lighter shade of blue */
+  padding: 25px 20px 15px 15px; /* Adjust padding for better appearance */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+
+
+/* ==========================================================================
+   #FONT
+   ========================================================================== */
+.font-robo {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+}
+
+/* ==========================================================================
+   #GRID
+   ========================================================================== */
+   .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Change justify-content property for better spacing */
+  }
+  
+  
+  @media (max-width: 767px) {
+    .col-2 {
+      width: 100%;
+    }
+  }
+  
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+ html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px; /* Add a default font size for better readability */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; /* Use 'inherit' for consistency */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; /* Use 'inherit' for consistency */
+}
+
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
+/*body,*/
+ h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Remove trailing margins from nested lists.
+ */
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+/**
+ * Remove default table spacing.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
+ */
+fieldset {
+  min-width: 0;
+  /* [1] */
+  border: 0;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+/* ==========================================================================
+   #PAGE WRAPPER
+   ========================================================================== */
+.page-wrapper {
+  min-height: 100vh;
+}
+
+/*body {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+/* ==========================================================================
+   #BACKGROUND
+   ========================================================================== */
+.bg-blue {
+  background: #F8F9F9;
+}
+
+/* ==========================================================================
+   #SPACING
+   ========================================================================== */
+.p-t-100 {
+  padding-top: 100px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-b-100 {
+  padding-bottom: 100px;
+}
+
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper--w680 {
+  max-width: 680px;
+}
+
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+   .btn {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 25px;
+    cursor: pointer;
+    font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+    color: #fff;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  }
+  
+  .btn--radius {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  
+  .btn--green {
+    background: #57b846;
+  }
+  
+  .btn--green:hover {
+    background: #4dae3c; /* Adjust the hover color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+  }
+  
+
+/* ==========================================================================
+   #DATE PICKER
+   ========================================================================== */
+   td.active {
+    background-color: #2c6ed5; /* Adjust the background color for active cells */
+  }
+  
+  input[type="date" i] {
+    padding: 12px; /* Reduce padding for a more compact appearance */
+  }
+  
+  .table-condensed td,
+  .table-condensed th {
+    font-size: 14px;
+    font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    padding: 8px; /* Increase padding for better spacing */
+  }
+  
+  .daterangepicker {
+    border: none;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1); /* Adjust shadow for a softer look */
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    margin-top: 10px; /* Increase margin for better separation */
+  }
+  
+  .daterangepicker::after,
+  .daterangepicker::before {
+    display: none;
+  }
+  
+
+.daterangepicker thead tr th {
+  padding: 10px 0;
+}
+
+.daterangepicker .table-condensed th select {
+  border: 1px solid #ccc; /* Adjust border color for select dropdown */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 8px; /* Increase padding for better spacing */
+  outline: none;
+}
+
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 8px; /* Add padding to input fields */
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px; /* Reduce margin for tighter spacing */
+  border-bottom: 2px solid #ccc;
+}
+
+
+.input-icon {
+  position: absolute;
+  font-size: 18px;
+  color: #555; /* Adjust icon color for better visibility */
+  right: 10px; /* Increase the distance between the icon and the input */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.input--style-1 {
+  padding: 10px 0; /* Increase padding for better spacing */
+  color: #666;
+}
+
+.input--style-1::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #777; /* Adjust placeholder color for better contrast */
+}
+
+.input--style-1:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #777; /* Adjust placeholder color for better contrast */
+  opacity: 1;
+}
+
+
+.input--style-1::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #666; /* Adjust placeholder color for better consistency */
+  opacity: 1;
+}
+
+.input--style-1:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #666; /* Adjust placeholder color for better consistency */
+}
+
+.input--style-1:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #666; /* Adjust placeholder color for better consistency */
+}
+
+/* ==========================================================================
+   #SELECT2
+   ========================================================================== */
+.select--no-search .select2-search {
+  display: none !important;
+}
+
+.rs-select2 .select2-container {
+  width: 100% !important;
+  outline: none;
+}
+
+.rs-select2 .select2-container .select2-selection--single {
+  outline: none;
+  border: none;
+  height: 40px; /* Increase height for better alignment with other inputs */
+}
+
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 40px; /* Increase line-height for better vertical alignment */
+  padding-left: 5px; /* Add padding-left for better spacing */
+  color: #666; /* Adjust color for better consistency */
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow {
+  height: 40px; /* Match the height of the selection box */
+  right: 8px; /* Adjust right spacing */
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center the arrow horizontally */
+  align-items: center; /* Center the arrow vertically */
+}
+
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after {
+  font-size: 20px; /* Increase the size of the arrow */
+  color: #999; /* Adjust arrow color for better visibility */
+  -webkit-transition: all 0.3s ease; /* Adjust transition duration */
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.rs-select2 .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow::after {
+  -webkit-transform: rotate(-180deg) scale(1.2); /* Scale the arrow on open */
+  -moz-transform: rotate(-180deg) scale(1.2);
+  -ms-transform: rotate(-180deg) scale(1.2);
+  -o-transform: rotate(-180deg) scale(1.2);
+  transform: rotate(-180deg) scale(1.2);
+}
+
+.select2-container--open .select2-dropdown--below {
+  border: none;
+  border-radius: 3px; /* Simplify border-radius property */
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15); /* Simplify box-shadow property */
+  border: 1px solid #ccc; /* Adjust border color */
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+
+/* ==========================================================================
+   #TITLE
+   ========================================================================== */
+.title {
+  margin-bottom: 37px;
+}
+
+/* ==========================================================================
+   #CARD
+   ========================================================================== */
+   .card {
+    overflow: hidden;
+    border-radius: 6px; /* Increase border radius for a smoother appearance */
+    background: #f8f9fa; /* Lighten the background color */
+    border: 1px solid #e0e0e0; /* Add a subtle border for better separation */
+  }
+  
+  .card-1 {
+    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1); /* Slightly adjust the box shadow */
+  }
+  
+  .card-1 .card-body {
+    padding: 0 40px; /* Reduce the horizontal padding for better content alignment */
+    padding-top: 40px;
+    padding-bottom: 60px; /* Increase the bottom padding for better spacing */
+  }
+  
